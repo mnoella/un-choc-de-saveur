@@ -1,0 +1,48 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    padding: 1px;
+    color: #211001;
+    background-color: rgb(86, 56, 19);
+    background-size: cover;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer .social-media {
+    text-align:center;
+    padding-bottom:5px;
+}
+
+.footer .social-media > a {
+    font-size:24px;
+    width:40px;
+    height:20px;
+    line-height:80px;
+    display:inline-block;
+    margin: 0 5px 0 5px;
+    color:inherit;
+    opacity:0.75;
+}
+
+.footer .social-media > a:hover {
+    opacity:0.9;
+}
+
+.footer .author {
+    margin-top:15px;
+    text-align:center;
+    font-size:14px;
+    color:#211001;
+    margin-bottom:0;
+}
+
+img {
+    width: 22px;
+    height: 22px;
+}
+
+
+

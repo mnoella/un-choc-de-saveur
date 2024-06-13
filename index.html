@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UN CHOC DE SAVEUR</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/jeu.css">
+    <link rel="stylesheet" href="style/faq.css">
+  </head>
+  <body>
+    <video autoplay loop muted plays-inline class="video" id="accueil">
+        <source src="video/bg-vid.mp4" type="video/mp4">
+    </video>
+    
+    <nav class="navbar">
+      <img src="img/logo.png" alt="logo" style="width: 130px; height: 70px;">
+      
+      <div class="nav-links">
+        <ul>
+          <li><a href="#accueil">ACCUEIL</a></li>
+          <li><a href="#jeu">LE JEU</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#mon-footer">CONTACTS</a></li>
+        </ul>
+      </div>
+      <img src="img/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+    
+    <div class="accueil">
+        <img src="img/logo.png" alt="logo" style="width: 147px; height: 70px;">
+        <h1>UN CHOC DE SAVEUR<span class="animation"></span></h1>
+        
+        <ul>
+            <li>
+                <img src="img/Flora.png" alt="Flora" style="width: 70px; height: 70px;">
+                <p>Flora-Larissa MERLO</p>
+                <p>Bachelor2 Ynov 3D</p>
+            </li>
+            <li>
+                <img src="img/Lucas.png" alt="Lucas" style="width: 70px; height: 70px;">
+                <p>Lucas BOUTEMY</p>
+                <p>Bachelor2 Ynov 3D</p>
+            </li>
+            <li>
+                <img src="img/Mathis.png" alt="Mathis" style="width: 70px; height: 70px;">
+                <p>Mathis FLESCH</p>
+                <p>Bachelor2 Ynov 3D</p>
+            </li>
+            <li>
+                <img src="img/Noella.png" alt="Noëlla" style="width: 70px; height: 70px;">
+                <p>Noëlla MAILHOL</p>
+                <p>Bachelor2 Ynov Informatique</p>
+            </li>
+        </ul>
+
+        <a href="#jeu">PLUS D'INFOS</a>
+    </div>
+    <header></header>
+
+    <!--ouvrir le menu avec le menu hamburger par un click-->
+    <script>
+      const menuHamburger = document.querySelector(".menu-hamburger")
+      const navLinks = document.querySelector(".nav-links")
+
+      menuHamburger.addEventListener('click', ()=>{
+        navLinks.classList.toggle('mobile-menu')
+      })
+    </script>
+    <br id="jeu"><br>
+    <div class="contexte">
+
+        <h3>"UN CHOC DE SAVEUR" C'EST QUOI ?</h3>
+        
+        <p>
+            "Un Choc de Saveur" est un jeu de plateau unique qui vous plonge dans une bataille épique entre les Pancakes et les Cookies. 
+            C'est bien plus qu'un simple jeu, c'est une opportunité de participer à la création d'un monde ludique et délicieux !
+        </p>
+        <br>
+        <p>
+            L'histoire captivante du jeu se déroule sur l'île d'Érable, où les Pancakes cultivent avec difficulté leurs ressources, 
+            tandis que du côté des Cookies, la récolte est abondante grâce à leur île très fertile. Une dispute éclate lorsque les Pancakes, 
+            jaloux des ressources des Cookies, demandent une part de leurs territoires, que les Cookies acceptent initialement. Cependant, les 
+            Pancakes, toujours insatiables, exigent davantage, mais les Cookies refusent et reprennent ce qu'ils ont donné !
+        </p>
+        <br>
+        <p>
+            Fou de rage, les Pancakes décident de prendre d'assaut l'île aux Cookies après avoir été éjectés. Le destin de cette bataille 
+            dépend de votre choix : serez-vous du côté des Pancakes ou des Cookies ? Rejoignez "Un Choc de Saveur" et vivez une aventure 
+            stratégique pleine de rebondissements !
+        </p>
+    </div>
+    <br><br><br><br>
+
+    <h4>PERSONNAGES</h4>
+    <br>
+    <h6>Cookies:</h6>
+    <br>
+    <div class="flip-card-container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/cookies/roi-cookie-v.png" alt="event verso" style="width: 100px; height: 150px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/cookies/roi-cookie-r.png" alt="roi cookie recto" style="width: 100px; height: 150px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Roi</p>
+                <p>Vies : 10</p>
+                <p>Attaques : 2</p>
+                <p>Défenses : 0</p>
+            </div>
+        </div>
+        
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/cookies/cookie-v.png" alt="cookie verso" style="width: 100px; height: 150px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/cookies/cookie-r.png" alt="cookie verso" style="width: 100px; height: 150px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Normal</p>
+                <p>Vies : 2</p>
+                <p>Attaques : 2</p>
+                <p>Défenses : 0</p>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/cookies/cookie-agri-v.png" alt="cookie agriculteur verso" style="width: 100px; height: 150px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/cookies/cookie-agri-r.png" alt="cookie agriculteur recto" style="width: 100px; height: 150px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Agriculteur</p>
+                <p>Vies : 1</p>
+                <p>Attaques : 0</p>
+                <p>Défenses : 0</p>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/cookies/cookie-boulanger-v.png" alt="cookie boulanger verso" style="width: 100px; height: 150px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/cookies/cookie-boulanger-r.png" alt="cookie boulanger recto" style="width: 100px; height: 150px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Boulanger</p>
+                <p>Vies : 2</p>
+                <p>Attaques : 0</p>
+                <p>Défenses : 1</p>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/cookies/cookie-elite-v.png" alt="cookie elite verso" style="width: 100px; height: 150px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/cookies/cookie-elite-r.png" alt="cookie elite recto" style="width: 100px; height: 150px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Elite</p>
+                <p>Vies : 4</p>
+                <p>Attaques : 3</p>
+                <p>Défenses : 0</p>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/cookies/cookie-medecin-v.png" alt="cookie medecin verso" style="width: 100px; height: 150px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/cookies/cookie-medecin-r.png" alt="cookie medecin recto" style="width: 100px; height: 150px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Médecin</p>
+                <p>Vies : 4</p>
+                <p>Attaques : 0</p>
+                <p>Défenses : 1</p>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/cookies/cookie-zombie-v.png" alt="cookie zombie verso" style="width: 100px; height: 150px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/cookies/cookie-zombie-r.png" alt="cookie zombie recto" style="width: 100px; height: 150px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Zombie</p>
+                <p>Vies : 1</p>
+                <p>Attaques : 1</p>
+                <p>Défenses : 0</p>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+
+    <h6>Pancakes</h6>
+    <br>
+    <div class="flip-card-container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/pancakes/roi-pancake-v.png" alt="roi event verso" style="width: 100px; height: 150px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/pancakes/roi-pancake-r.png" alt="roi pancake recto" style="width: 100px; height: 150px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Roi</p>
+                <p>Vies : 10</p>
+                <p>Attaques : 2</p>
+                <p>Défenses : 0</p>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/pancakes/pancake-v.png" alt="event verso" style="width: 100px; height: 150px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/pancakes/pancake-r.png" alt="pancake recto" style="width: 100px; height: 150px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Normal</p>
+                <p>Vies : 2</p>
+                <p>Attaques : 2</p>
+                <p>Défenses : 0</p>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/pancakes/pancake-agri-v.png" alt="pancake agriculteur verso" style="width: 100px; height: 150px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/pancakes/pancake-agri-r.png" alt="pancake agriculteur recto" style="width: 100px; height: 150px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Agriculteur</p>
+                <p>Vies : 1</p>
+                <p>Attaques : 0</p>
+                <p>Défenses : 0</p>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/pancakes/pancake-boulanger-v.png" alt="pancake boulanger verso" style="width: 100px; height: 150px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/pancakes/pancake-boulanger-r.png" alt="pancake boulanger recto" style="width: 100px; height: 150px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Boulanger</p>
+                <p>Vies : 2</p>
+                <p>Attaques : 0</p>
+                <p>Défenses : 1</p>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/pancakes/pancake-elite-v.png" alt="pancake elite verso" style="width: 100px; height: 150px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/pancakes/pancake-elite-r.png" alt="pancake elite recto" style="width: 100px; height: 150px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Elite</p>
+                <p>Vies : 4</p>
+                <p>Attaques : 3</p>
+                <p>Défenses : 0</p>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/pancakes/pancake-medecin-v.png" alt="pancake medecin verso" style="width: 100px; height: 150px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/pancakes/pancake-medecin-r.png" alt="pancake medecin recto" style="width: 100px; height: 150px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Médecin</p>
+                <p>Vies : 4</p>
+                <p>Attaques : 0</p>
+                <p>Défenses : 1</p>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/pancakes/pancake-zombie-v.png" alt="pancake zombie verso" style="width: 100px; height: 150px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/pancakes/pancake-zombie-r.png" alt="pancake zombie recto" style="width: 100px; height: 150px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Zombie</p>
+                <p>Vies : 1</p>
+                <p>Attaques : 1</p>
+                <p>Défenses : 0</p>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+
+    <h4>RESSOURCES</h4>
+    <br>
+    <div class="ressource">
+        <div>
+            <img src="img/ressources/choco.png" alt="chocolat" style="width: 70px; height: 70px;">
+            <p>Chocolat</p>
+        </div>
+
+        <div>
+            <img src="img/ressources/sirop.png" alt="sirop d'érable" style="width: 60px; height: 70px;">
+            <p>Sirop d'érable</p>
+        </div>
+            
+        <div>
+            <img src="img/ressources/lait1.png" alt="1 lait" style="width: 60px; height: 70px;">
+            <p>1 brique de lait</p>
+        </div>
+            
+        <div>
+            <img src="img/ressources/lait2.png" alt="2 lait" style="width: 60px; height: 70px;">
+            <p>2 briques de lait</p>
+        </div>
+        
+        <div>
+            <img src="img/ressources/lait4.png" alt="4 lait" style="width: 55px; height: 75px;">
+            <p>4 briques de lait</p>
+        </div>
+        
+        <div>
+            <img src="img/ressources/oeuf1.png" alt="1 oeuf" style="width: 80px; height: 80px;">
+            <p>1 oeuf</p>
+        </div>
+        
+        <div>
+            <img src="img/ressources/oeuf2.png" alt="2 oeufs" style="width: 80px; height: 80px;">
+            <p>2 oeufs</p>
+        </div>
+
+        <div>
+            <img src="img/ressources/oeuf4.png" alt="4 oeufs" style="width: 80px; height: 80px;">
+            <p>4 oeufs</p>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <h4>QUÊTES</h4>
+    <br>
+    <h6>QUÊTES RESSOURCES</h6>
+    <br>
+    <div class="flip-card-container">
+        <div class="quete">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/quetes/quete-v.png" style="width: 150px; height: 100px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/quetes/quete-ressource1.png" style="width: 150px; height: 100px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Quête : Récoltez 4 chocolats ou sirop d'érable</p>
+                <p>Récompenses : 2 oeufs, 2 laits</p>
+            </div>
+        </div>
+
+        <div class="quete">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/quetes/quete-v.png" style="width: 150px; height: 100px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/quetes/quete-ressource2.png" style="width: 150px; height: 100px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Quête : Récoltez 4 ressources dont 2 laits</p>
+                <p>Récompenses : 2 oeufs, 2 pâtes</p>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <h6>QUÊTES BONUS</h6>
+    <br>
+    <div class="flip-card-container">
+        <div class="quete">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/quetes/quete-v.png" style="width: 150px; height: 100px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/quetes/quete-bonus1.png" style="width: 150px; height: 100px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Quête : Ne pas récolter pendant 1 tour</p>
+                <p>Récompenses : La prochaine récolte est doublée</p>
+            </div>
+        </div>
+
+        <div class="quete">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/quetes/quete-v.png" style="width: 150px; height: 100px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/quetes/quete-bonus2.png" style="width: 150px; height: 100px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Quête : Félicitation! Vous avez réussi votre quête</p>
+                <p>Récompenses : La récompense est doublée lors de la prochaine quête </p>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br>
+
+    <h6>QUÊTES DES</h6>
+    <br>
+    <div class="flip-card-container">
+        <div class="quete">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/quetes/quete-v.png" style="width: 150px; height: 100px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/quetes/quete-de1.png" style="width: 150px; height: 100px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Quête : pair: gagné - impair: une vie en moins pour le Roi</p>
+                <p>Récompenses : une vie de plus pour le Roi</p>
+            </div>
+        </div>
+
+        <div class="quete">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/quetes/quete-v.png" style="width: 150px; height: 100px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/quetes/quete-de2.png" style="width: 150px; height: 100px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Quête : impair: gagné - pair: 1 sirop d'érable ou 1 chocolat en moins</p>
+                <p>Récompenses : 1 sirop d'érable ou  1 chocolat de plus</p>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+    <h6>QUÊTES MALUS</h6>
+    <br>
+    <div class="flip-card-container">
+        <div class="quete">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/quetes/quete-v.png" style="width: 150px; height: 100px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/quetes/quete-malus1.png" style="width: 150px; height: 100px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Malus : enlevez 1 à chacune de vos ressources</p>
+            </div>
+        </div>
+
+        <div class="quete">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/quetes/quete-v.png" style="width: 150px; height: 100px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/quetes/quete-malus2.png" style="width: 150px; height: 100px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Malus : vous perdez la motié de vos ressources récoltées</p>
+            </div>
+            </div>
+    </div>
+
+    <br><br><br><br><br>
+
+    <h6>QUÊTES SOLDATS</h6>
+    <br>
+    <div class="flip-card-container">
+        <div class="quete">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/quetes/quete-v.png" style="width: 150px; height: 100px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/quetes/quete-soldat1.png" style="width: 150px; height: 100px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Quête : créez un Zombie</p>
+                <p>Récompenses : un Zombie</p>
+            </div>
+        </div>
+
+        <div class="quete">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/quetes/quete-v.png" style="width: 150px; height: 100px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/quetes/quete-soldat2.png" style="width: 150px; height: 100px;">
+                </div>
+            </div>
+            <div class="description">
+                <p>Quête : créez un Boulanger</p>
+                <p>Récompenses : un Zombie</p>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <h4>ÉVÈNEMENTS</h4>
+    <br>
+    <div class="flip-card-container">
+        <div class="evenement">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/events/event-v.png" alt="event verso" style="width: 150px; height: 100px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/events/event1.png" alt="event1 recto" style="width: 150px; height: 100px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="evenement">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/events/event-v.png" alt="event verso" style="width: 150px; height: 100px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/events/event2.png" alt="event2 recto" style="width: 150px; height: 100px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="evenement">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/events/event-v.png" alt="event verso" style="width: 150px; height: 100px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/events/event3.png" alt="event3" style="width: 150px; height: 100px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="evenement">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/events/event-v.png" alt="event verso" style="width: 150px; height: 100px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/events/event4.png" alt="event4 recto" style="width: 150px; height: 100px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="evenement">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/events/event-v.png" alt="event verso" style="width: 150px; height: 100px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/events/event5.png" alt="event5 recto" style="width: 150px; height: 100px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="evenement">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/events/event-v.png" alt="event verso" style="width: 150px; height: 100px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/events/event6.png" alt="event6 recto" style="width: 150px; height: 100px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="evenement">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/events/event-v.png" alt="event verso" style="width: 150px; height: 100px;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/events/event7.png" alt="event7 recto" style="width: 150px; height: 100px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <h4>JETONS</h4>
+    <br>
+    <h6>Cookies</h6>
+    <br>
+    <div class="jeton-cookie">
+        <div>
+            <img src="img/jetons-cookies/cookie7.png" alt="event verso" style="width: 100px; height: 150px;">
+            <p>Roi</p>
+        </div>
+
+        <div>
+            <img src="img/jetons-cookies/cookie1.png" alt="event verso" style="width: 100px; height: 150px;">
+            <p>Normal</p>
+        </div>
+            
+        <div>
+            <img src="img/jetons-cookies/cookie2.png" alt="event verso" style="width: 100px; height: 150px;">
+            <p>Zombie</p>
+        </div>
+            
+        <div>
+            <img src="img/jetons-cookies/cookie3.png" alt="event verso" style="width: 100px; height: 150px;">
+            <p>Médecin</p>
+        </div>
+        
+        <div>
+            <img src="img/jetons-cookies/cookie4.png" alt="event verso" style="width: 100px; height: 150px;">
+            <p>Elite</p>
+        </div>
+        
+        <div>
+            <img src="img/jetons-cookies/cookie5.png" alt="event verso" style="width: 100px; height: 150px;">
+            <p>Agriculteur</p>
+        </div>
+        
+        <div>
+            <img src="img/jetons-cookies/cookie6.png" alt="event verso" style="width: 100px; height: 150px;">
+            <p>Boulanger</p>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <h6>Pancakes</h6>
+    <br>
+    <div class="jeton-pancake">
+        <div>
+            <img src="img/jetons-pancakes/pancake7.png" alt="event verso" style="width: 100px; height: 150px;">
+            <p>Roi</p>
+        </div>
+
+        <div>
+            <img src="img/jetons-pancakes/pancake1.png" alt="event verso" style="width: 100px; height: 150px;">
+            <p>Normal</p>
+        </div>
+            
+        <div>
+            <img src="img/jetons-pancakes/pancake2.png" alt="event verso" style="width: 100px; height: 150px;">
+            <p>Zombie</p>
+        </div>
+            
+        <div>
+            <img src="img/jetons-pancakes/pancake3.png" alt="event verso" style="width: 100px; height: 150px;">
+            <p>Médecin</p>
+        </div>
+        
+        <div>
+            <img src="img/jetons-pancakes/pancake4.png" alt="event verso" style="width: 100px; height: 150px;">
+            <p>Elite</p>
+        </div>
+        
+        <div>
+            <img src="img/jetons-pancakes/pancake5.png" alt="event verso" style="width: 100px; height: 150px;">
+            <p>Agriculteur</p>
+        </div>
+        
+        <div>
+            <img src="img/jetons-pancakes/pancake6.png" alt="event verso" style="width: 100px; height: 150px;">
+            <p>Boulanger</p>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <h6>Vie et dé</h6>
+    <br>
+    <div class="jeton-de-vie">
+        <div>
+            <img src="img/jetons-pancakes/coeur.png" alt="vie" style="width: 70px; height: 70px;">
+        </div>
+        
+        <div>
+            <img src="img/jetons-pancakes/dé.png" alt="dé" style="width: 70px; height: 70px;">
+        </div>
+    </div>
+
+    <br id="tour"><br><br><br>
+
+    <h4>DÉROULEMENT D'UN TOUR</h4>
+    <br>
+    <div class="tour">
+        <h4>TOUR</h4>
+        <p>1 - Piochez une carte évènement (sauf 1er tour)</p>
+        <p>2 - Récoltez votre ressource principale</p>
+        <p>3 - Piochez une carte quête (Sivous n'en avez pas)</p>
+        <p>4 - Déplacement</p>
+        <p>5 - Récoltez et dépensez vos ressources</p>
+        <p>Attaquez / Défendez</p>
+        <p>7 - Validez les récompenses des quêtes</p>
+        <p>8 - Les agriculteurs revivent</p>
+        <p>9 - Tour suivant</p>
+        
+    </div>
+
+    <br id="faq"><br><br><br><br><br>
+
+
+    <h3>FAQ</h3>
+        <section class="faq-section">
+            <input type="checkbox" id="q1">
+            <label for="q1">Qu'est-ce que "Un Choc de Saveur" ?</label>
+            <br><br>
+            <p>
+                "Un Choc de Saveur" est un jeu de plateau unique qui vous plonge dans une bataille épique entre <br> 
+                les Pancakes et les Cookies. C'est bien plus qu'un simple jeu, c'est une opportunité de participer <br>
+                à la création d'un monde ludique et délicieux ! <a href="#jeu">Plus d'infos</a>
+            </p>
+        </section>
+
+        <section class="faq-section">
+            <input type="checkbox" id="q2">
+            <label for="q2">Quels sont les âges recommandés pour jouer à "Un Choc de Saveur" ?</label>
+            <br><br>
+            <p>
+                "Un Choc de Saveur" est conçu pour être accessible et amusant pour un large public, avec une <br>
+                classification PEGI 7. Cela indique que le jeu est adapté aux joueurs âgés de 7 ans et plus. Cette <br>
+                classification assure que le contenu du jeu est approprié pour les enfants de 7 ans et plus, tout en <br>
+                offrant une expérience de jeu divertissante et stimulante. Les règles simples, les éléments ludiques <br>
+                et le scénario captivant font de "Un Choc de Saveur" une excellente option pour les familles et <br>
+                les jeunes joueurs.
+            </p>
+        </section>
+
+        <section class="faq-section">
+            <input type="checkbox" id="q3">
+            <label for="q3">Combien de joueurs nécessaires pour une partie de "Un Choc de Saveur" ?</label>
+            <br><br>
+            <p>
+                "Un Choc de Saveur" est conçu pour un maximum de 2 joueurs par partie.
+            </p>
+        </section>
+
+        <section class="faq-section">
+            <input type="checkbox" id="q4">
+            <label for="q4">Quelle est la durée moyenne d'une partie de "Un Choc de Saveur" ?</label>
+            <br><br>
+            <p>
+                La durée moyenne d'une partie de "Un Choc de Saveur" est estimée entre 30 et 40 minutes.
+            </p>
+        </section>
+
+        <section class="faq-section">
+            <input type="checkbox" id="q5">
+            <label for="q5">Quelles sont les règles de base du jeu ?</label>
+            <br> <br>
+            <p>
+                OBJECTIF : Choisissez votre camp, soit les Pancakes, soit les Cookies, et affrontez votre <br>
+                adversaire pour déterminer qui contrôlera l'île d'Érable.
+                <br><br>
+                MISE EN PLACE : Disposez le plateau de jeu, les figurines, les cartes et les dés conformément aux instructions. 
+                <br><br>
+                Chaque joueur effectue ses actions dans un ordre prédéfini, comprenant des phases comme le <br>
+                déplacement, l'attaque, et la défense. <a href="#tour">Tour de jeu</a>
+            </p>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <div class="footer" id="mon-footer">
+        <footer>
+            <div class="social-media"><a href="https://www.instagram.com/un_choc_de_saveur/" target="_blank"><img src="img/instagram.png" alt="insta"></a><a href="https://www.facebook.com/profile.php?id=61555658515306" target="_blank"><img src="img/facebook.png" alt="fb"></a><a href="#mail" target="_blank"><img src="img/gmail.png" alt=""></a></div>
+            <p class="author">Un Choc De Saveur © 2023</p>
+        </footer>
+    </div>
+
+    <script src="js/scroll.js"></script>
+</body>
+</html>

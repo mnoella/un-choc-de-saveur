@@ -1,0 +1,195 @@
+body {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.flip-card-container {
+    display: flex;
+    flex-wrap: wrap;/* Passer a la ligne en fonction de la taille de l'écran*/ 
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100px;
+    height: 80px;
+    perspective: 1000px; 
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-bottom: 150px;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.evenement:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.quete:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.evenement{
+  display: flex;
+  background-color: transparent;
+  width: 150px;
+  height: 80px;
+  margin: 5px;
+  perspective: 1000px; 
+  padding-bottom: 10px;
+  padding-left: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.quete {
+  background-color: transparent;
+  width: 150px;
+  height: 80px;
+  perspective: 500px; 
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.jeton-cookie, .jeton-pancake, .jeton-de-vie, .ressource {
+  display: flex;
+  justify-content: center;
+  padding: 0 15px 0 15px;
+  flex-wrap: wrap;
+}
+
+.jeton-cookie div, .jeton-pancake div, .jeton-de-vie div, .ressource div{
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-bottom: 30px;
+}
+
+.ressource div p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 12.5px;
+}
+ 
+
+  h3, h5 {
+    color: #211001;
+    font-family: 'Stencil';
+  }
+
+  .tour p, .tour h4{
+    font-family: 'Stencil';
+    padding: 9px;
+  }
+  
+  .tour p {
+    font-size: 7px;
+  }
+
+  .tour h4 {
+    font-size: 11px;
+  }
+
+  .tour {
+    border: 2px solid rgb(0, 0, 0);
+    margin: auto;
+    width: 200px;
+    height: auto;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    background-color: white;
+    text-align: center;
+  }
+
+
+ 
+
+  .tour:hover,.tour:hover p{
+    width: 250px;
+    height: auto;
+    font-size: 11px;
+    padding-right: 15px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .tour:hover h4 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .flip-card .description, .quete .description {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    padding: 75px 0 0 0;
+    /*opacity: 0;
+    transition: opacity 0.5s;*/
+  }
+
+  .quete .description {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    padding: 27px 0 0 0;
+    /*opacity: 0;
+    transition: opacity 0.5s;*/
+  }
+
+  /*
+  .flip-card:hover .description {
+    opacity: 1;
+  }*/
+
+  .flip-card .description p:first-child {
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .jeton-cookie p, .jeton-pancake p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+  }
+
+
+  @media only screen and (max-width: 428px) {
+    .flip-card, .evenement, .quete {
+        width: 80px;
+        height: 60px;
+    }
+}

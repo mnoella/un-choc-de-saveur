@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none; 
+}/*RESET*/
+
+
+body {
+    font-family: 'Stencil';
+}
+
+
+header {
+    width: 100vw;
+    height: auto;
+    background-size: cover;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    background: rgb(86, 56, 19);
+    top: 0;
+    /* position: fixed;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:rgb(86, 56, 19);
+    z-index: 1000; */
+    
+}
+
+.navbar a{
+    color: black;
+    font-weight: bold;
+}
+
+.navbar .logo{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 25px;
+}
+
+.navbar .nav-links ul li.active a {
+    color: #7c0214;
+    font-weight: 600;
+}
+
+.navbar .menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+}
+
+/* @media screen and (max-width: 870px) {
+    .navbar a{
+        color: black;
+        font-size: 9px;
+    }
+
+    .navbar {
+        justify-content: start;
+    }
+    https://github.com/mustafaerden/full-screen-responsive-video-background-with-html-css/blob/main/styles.css
+    https://github.com/mustafaerden/full-screen-responsive-video-background-with-html-css/blob/main/index.html
+} */
+
+
+.accueil {
+    position: absolute;
+    transform: translate(-1%, 5%);
+    margin-left: 60px;
+    margin-top: -630px;
+    border: 0px solid rgb(86, 56, 19);
+    border-radius: 10px;
+    padding: 25px;
+    backdrop-filter: blur(80px);
+
+
+}
+
+.accueil h1 {
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+    padding-top: 5px;
+}
+
+.accueil span {
+    color: rgb(22, 71, 186);
+}
+
+.accueil a {
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid rgb(0, 0, 0);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    background-color: rgb(165, 127, 103);
+    padding: 7px 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.accueil a:hover {
+    color: antiquewhite;
+}
+
+.video {
+    /* position: absolute;
+    right: 0;
+    z-index: -1;
+    bottom: 0; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.accueil ul{
+    display: flex;
+    justify-content: center;
+}
+
+.accueil ul li{
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.accueil ul li p {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 11px;
+}
+
+.contexte {
+    border: 3px solid rgb(93, 37, 3);
+    border-radius: 8px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+    padding: 10px 25px 25px 25px;
+    flex-wrap: wrap;
+}
+
+.contexte p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14.5px;
+    
+    
+}
+
+
+/* version mobile 
+@media screen and (max-width: 428px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .logo{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+
+    .navbar .menu-hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgb(255, 255, 255, 0.20);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;  par défaut le menu sera caché, en cliquant sur mobile menu, ça va s'ouvrir
+        transition: all 0.5s ease;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+   }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+}
+*/
